@@ -1,0 +1,38 @@
+.p-service {
+  padding: 100px 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.p-service__container {
+  display: flex;
+  column-gap: 120px;
+  margin-top: 20px;
+}
+.p-service__image {
+  min-width: 250px;
+}
+.p-service__title {
+  font-size: 110px;
+  font-family: adobe-garamond-bold, serif;
+  color: #ff7f50;
+  text-align: right;
+}
+.p-service__content {
+  padding-top: 80px;
+}
+.p-service__section:not(:first-child) {
+  margin-top: 120px;
+}
+.p-service__sectionTitle {
+  font-size: 40px;
+  font-family: adobe-garamond-bold, serif;
+}
+.p-service__sectionSubTitle {
+  font-size: 24px;
+  margin-top: 25px;
+}
+.p-service__sectionText {
+  font-family: "游ゴシック Medium", "YuGothic M", 游ゴシック体, YuGothic, "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
+  margin-top: 40px;
+  font-size: 20px;
+}

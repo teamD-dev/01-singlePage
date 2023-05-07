@@ -17,7 +17,9 @@ body {
   line-height: 1.7;
   letter-spacing: .06em;
 }
-
+.l-footer {
+  background: linear-gradient(-45deg, #fffcf7, #ffbf79);
+}
 h2 {
   font-family: 'EB Garamond', serif;
   font-size: 24rem;

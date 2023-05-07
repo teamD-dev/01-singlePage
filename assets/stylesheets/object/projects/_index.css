@@ -16,8 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
-  width: 100%;
 }
 
 .p-header__top>a>h2 {
@@ -31,7 +29,10 @@
   width: 140px;
 }
 
-.p-header__top>a:hover {
+.p-header__top>a:hover,
+.p-footer__linkContainer>h2 a:hover,
+.p-footer__footContainer>a:hover,
+.p-footer__privacy>h3>a:hover {
   opacity: .8;
 }
 
@@ -50,22 +51,8 @@
   cursor: pointer;
 }
 
-.p-header__backGround {
-  background: linear-gradient(-45deg, #fffcf7, #ffbf79);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
 .p-header__linkContainer {
-  padding: 20px 20px 20px 40px;
-}
-
-.p-header__link {
-  height: 90%;
+  padding: 110px 20px 20px 100px;
 }
 
 .p-header__link:first-child {
@@ -75,6 +62,25 @@
 .p-header__link:not(:first-child) {
   margin-top: 20px;
 }
+
+/* ハンバーガーメニューのアニメーション */
+.p-header__container {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: opacity .5s linear;
+  background: linear-gradient(-45deg, #fffcf7, #ffbf79);
+}
+
+.p-header__container.is-active {
+  pointer-events: auto;
+  opacity: 1;
+}
+  /* ここまで */
 
 .p-footer {
   padding: 20px;
@@ -99,10 +105,6 @@
 
 .p-footer__linkContainer>h2 {
   font-size: 2rem;
-}
-
-.p-footer__linkContainer>h2 a:hover {
-  cursor: pointer;
 }
 
 .p-footer__privacy {

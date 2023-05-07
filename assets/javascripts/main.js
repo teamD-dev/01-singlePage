@@ -7,22 +7,19 @@
   const openBtn = document.querySelector('.bi-list');
   const container = document.querySelector('.p-header__container');
   const header = document.querySelector('.p-header');
-  const backGround = document.querySelector('.p-header__backGround');
 
   open.addEventListener('click', () => {
-    container.classList.remove('u-hidden');
+    container.classList.add('is-active');
     closeBtn.classList.remove('u-hidden');
     openBtn.classList.add('u-hidden');
-    backGround.classList.remove('u-hidden');
-    header.classList.add('u-bottom0');
+    container.classList.add('p-header__backGround');
   });
   closes.forEach( close => {
     close.addEventListener('click', () => {
-      container.classList.add('u-hidden');
+      container.classList.remove('is-active');
       closeBtn.classList.add('u-hidden');
       openBtn.classList.remove('u-hidden');
-      backGround.classList.add('u-hidden');
-      header.classList.remove('u-bottom0');
+    container.classList.remove('p-header__backGround');
     });
   })
 }

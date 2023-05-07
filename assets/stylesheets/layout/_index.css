@@ -3,34 +3,47 @@ html {
   background-color: #F6EEE8;
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
   font-family: "游ゴシック Medium", "YuGothic M", 游ゴシック体, YuGothic, "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
 }
-.l-main {
+
+.l-main,
+.l-header,
+.l-footer {
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.7;
   letter-spacing: .06em;
 }
+
 h2 {
   font-family: 'EB Garamond', serif;
   font-size: 24rem;
 }
+
 h3 {
   font-size: 2.8rem;
   font-family: "游ゴシック Medium", "YuGothic M", 游ゴシック体, YuGothic, "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
 }
+
 h4 {
   font-family: 'EB Garamond', serif;
   font-size: 2.4rem;
 }
-@media screen and (min-width: 796px) { /* pc用スタイル */
 
-
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
+  
+  
 }
 
-@media screen and (max-width: 795px) { /* sp用スタイル */
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
+  .l-footer__link > a {
+    display: block;
+  }
 
 
 }

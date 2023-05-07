@@ -91,6 +91,8 @@
   font-family: 'EB Garamond', serif;
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .p-footer__footContainer {

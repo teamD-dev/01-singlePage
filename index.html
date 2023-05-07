@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,30 +12,81 @@
 
   <link rel="icon" href="assets/images/common/favicon.png">
 
-  <!-- 不要（提出時には削除してください）
-  <meta property="og:admins" content="（FBのID）">
-  <meta property="og:title" content="（サイトタイトル）">
-  <meta property="og:type" content="（ページの種類）">
-  <meta property="og:description" content="（ページの説明）">
-  <meta property="og:url" content="（ページのURL）">
-  <meta property="og:image" content="（ogp画像のURL）">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="（サイトタイトル）">
-  <meta name="twitter:card" content="（カード種類）">
-  <meta name="twitter:site" content="（@Twitterユーザー名）">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=M+PLUS+Rounded+1c:wght@400;500;700&amp;family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;family=Oswald:wght@200;300;400;500&amp;family=Righteous&amp;display=swap"
+    rel="stylesheet">
 
-  <link rel="canonical" href="（正しいページURL）">
-
-  <link rel="apple-touch-icon-precomposed" href="（アップルタッチアイコンの画像URL）">
-  -->
-
+  <!-- CSS  追加ファイルがある場合はここに記載-->
   <link rel="stylesheet" href="assets/stylesheets/app.css">
-
-  <!-- HTML・CSS入門では不要（提出時には削除してください）
-  <script src="assets/javascripts/lib/jquery-1.9.1.min.js" defer></script>
-  <script src="assets/javascripts/index.js" defer></script>
-  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 </head>
-<body>
+
+<body id="#top">
+  <div class="l-header">
+    <header>
+      <div class="p-header">
+        <div class="p-header__topContainer">
+          <div class="p-header__top">
+            <a href="https://seasist.co.jp/index.html"><img src="/assets/images/common/seassist-logo1_1.png"
+                alt="SEアシスト">
+              <h2>D-TEAM</h2>
+            </a>
+            <i class="bi bi-list js-headerOpen"></i>
+            <i class="bi bi-x js-headerClose u-hidden"></i>
+          </div>
+        </div>
+        <div class="p-header__container">
+          <div class="p-header__linkContainer">
+            <h2 class="p-header__link"><a class="js-headerClose" href="#top">Top</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#company">Company</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#service">Service</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#staff">Staff</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#contact">Contact</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#contact">PrivacyPolicy</a></h2>
+          </div>
+        </div>
+    </header>
+  </div>
+  <div class="l-main">
+    <!-- ここから記載 -->
+    <h2> Poricy</h2>
+    <h3>コンテンツ内のタイトル</h3>
+    <h4>Service、Staffのみ使用</h4>
+    <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+  </div>
+  <div class="l-footer">
+    <footer>
+      <div class="p-footer">
+        <div class="p-footer__topContainer">
+          <img src="/assets/images/common/seassist-logo1_w.png">
+          <div class="p-footer__linkContainer">
+            <h2><a href="#company">Company</a></h2>
+            <h2><a href="#service">Service</a></h2>
+            <h2><a href="#staff">Staff</a></h2>
+              <h2><a href="#contact">Contact</a></h2>
+          </div>
+          <div class="p-footer__privacy">
+            <h3><a href="">プライバシーポリシー</a></h3>
+          </div>
+        </div>
+        <div class="p-footer__footContainer">
+          <small>&copy;SEアシスト2021</small>
+          <a href="#top">Back to Top</a>
+        </div>
+    </footer>
+  </div>
+
+  <!-- js 追加ファイルがある場合はここ以下に記載 -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"></script>
+  <script src="/assets/javascripts/main.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,140 @@
 /* 共通スタイルは外に書く */
+.p-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  user-select: none;
+}
 
-@media screen and (min-width: 796px) { /* pc用スタイル */
+.p-header__topContainer {
+  padding: 20px;
+}
+
+.p-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-header__top>a>h2 {
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.p-header__top>a>img {
+  width: 140px;
+}
+
+.p-header__top>a:hover,
+.p-footer__linkContainer>h2 a:hover,
+.p-footer__footContainer>a:hover,
+.p-footer__privacy>h3>a:hover {
+  opacity: .8;
+}
+
+.p-header__top>.bi,
+.p-header__link {
+  font-size: 5rem;
+}
+
+.p-header__top>.bi,
+.p-header__link,
+.p-footer {
+  color: #333;
+}
+
+.p-header__top>.bi:hover {
+  cursor: pointer;
+}
+
+.p-header__linkContainer {
+  padding: 110px 20px 20px 100px;
+}
+
+.p-header__link:first-child {
+  margin-top: 40px;
+}
+
+.p-header__link:not(:first-child) {
+  margin-top: 20px;
+}
+
+/* ハンバーガーメニューのアニメーション */
+.p-header__container {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: opacity .5s linear;
+  background: linear-gradient(-45deg, #fffcf7, #ffbf79);
+}
+
+.p-header__container.is-active {
+  pointer-events: auto;
+  opacity: 1;
+}
+  /* ここまで */
+
+.p-footer {
+  padding: 20px;
+}
+
+.p-footer__topContainer,
+.p-footer__footContainer {
+  font-family: 'EB Garamond', serif;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.p-footer__footContainer {
+  margin-top: 40px;
+}
+
+.p-footer__topContainer>img {
+  width: 70px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.p-footer__linkContainer>h2 {
+  font-size: 2rem;
+}
+
+.p-footer__privacy {
+  align-self: flex-end;
+}
+
+.p-footer__privacy>h3 {
+  font-size: 1rem;
+}
+
+.p-footer__contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
 
 
 }
 
-@media screen and (max-width: 795px) { /* sp用スタイル */
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
 
 
 }

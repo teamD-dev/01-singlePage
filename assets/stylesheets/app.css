@@ -27,6 +27,8 @@
 // -----------------------------------------------------------------*/
 
 @import 'object/projects/_index.css';
+@import 'object/projects/_header.css';
+@import 'object/projects/_footer.css';
 @import 'object/projects/_staff.css';
 
 /*// -----------------------------------------------------------------

@@ -1,0 +1,80 @@
+/* 共通スタイルは外に書く */
+
+.p-staff {
+  padding: 10.4rem 8rem 0;
+  width: 130rem;
+  margin: 0 auto;
+}
+.p-staff__about {
+  width: 54.5%;
+  margin-left: auto;
+}
+.p-staff__aboutTitle {}
+.p-staff__aboutText {
+  margin-top: 30px;
+}
+
+.p-staff__profile {}
+.p-staff__profileTitle {
+  color: #D0513E;
+  width: 54.5%;
+  margin-top: 100px;
+  margin-left: auto;
+}
+.p-staff__personal {
+  display: flex;
+  margin-top: 30px;
+}
+.p-staff__personal:nth-of-type(n + 2) {
+  margin-top: 120px;
+}
+.p-staff__personalImg {
+  width: 45.5%;
+  padding-top: 40px;
+}
+.p-staff__images {
+  width: 26rem;
+}
+.p-staff__info {
+  width: 54.5%;
+}
+.p-staff__textArea {}
+.p-staff__name {}
+.p-staff__text {
+  margin-top: 30px;
+}
+
+.p-staff__skill {}
+.p-staff__skillTitle {
+  color: #D0513E;
+  padding-top: 80px;
+}
+.p-staff__qandaWrap {
+  margin-top: 30px;
+}
+.p-staff__qanda {
+  display: flex;
+  margin-top: 15px;
+}
+.p-staff__skillQ {
+  width: 25%;
+}
+.p-staff__skillA {
+  width: 65%;
+}
+.p-staff__divination {}
+.p-staff__divinationTitle {
+  color: #D0513E;
+  padding-top: 80px;
+}
+
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}

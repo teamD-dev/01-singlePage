@@ -8,45 +8,385 @@
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <title>01-singlePage</title>
   <meta name="description" content="">
-
   <link rel="icon" href="assets/images/common/favicon.png">
-
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
-
-  <!-- 不要（提出時には削除してください）
-  <meta property="og:admins" content="（FBのID）">
-  <meta property="og:title" content="（サイトタイトル）">
-  <meta property="og:type" content="（ページの種類）">
-  <meta property="og:description" content="（ページの説明）">
-  <meta property="og:url" content="（ページのURL）">
-  <meta property="og:image" content="（ogp画像のURL）">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="（サイトタイトル）">
-  <meta name="twitter:card" content="（カード種類）">
-  <meta name="twitter:site" content="（@Twitterユーザー名）">
-
-  <link rel="canonical" href="（正しいページURL）">
-
-  <link rel="apple-touch-icon-precomposed" href="（アップルタッチアイコンの画像URL）">
-  -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=M+PLUS+Rounded+1c:wght@400;500;700&amp;family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;family=Oswald:wght@200;300;400;500&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+  <!-- CSS  追加ファイルがある場合はここに記載-->
   <link rel="stylesheet" href="assets/stylesheets/app.css">
-
-  <!-- HTML・CSS入門では不要（提出時には削除してください）
-  <script src="assets/javascripts/lib/jquery-1.9.1.min.js" defer></script>
-  <script src="assets/javascripts/index.js" defer></script>
-  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 </head>
-<body>
-  <div class="l-main">
-    ここから記載
-    <h2> Poricy</h2>
-    <h3>コンテンツ内のタイトル</h3>
-    <h4>Service、Staffのみ使用</h4>
-    <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+<body id="#top">
+  <div class="l-header">
+    <header>
+      <div class="p-header">
+        <div class="p-header__topContainer">
+          <div class="p-header__top">
+            <a href="https://seasist.co.jp/index.html"><img src="/assets/images/common/seassist-logo1_1.png" alt="SEアシスト">
+            <h2>D-TEAM</h2>
+            </a>
+            <i class="bi bi-list js-headerOpen"></i>
+            <i class="bi bi-x js-headerClose u-hidden"></i>
+          </div>
+        </div>
+        <div class="p-header__container">
+          <div class="p-header__linkContainer">
+            <h2 class="p-header__link"><a class="js-headerClose" href="#top">Top</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#company">Company</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#service">Service</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#staff">Staff</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#contact">Contact</a></h2>
+            <h2 class="p-header__link"><a class="js-headerClose"href="#contact">PrivacyPolicy</a></h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="l-main">
+      <!-- ここから参考 -->
+      <h2> Poricy</h2>
+      <h3>コンテンツ内のタイトル</h3>
+      <h4>Service、Staffのみ使用</h4>
+      <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+      <!-- ここまで参考 -->
+
+      <!-- ここから記載 -->
+      <div class="p-staff">
+        <div class="p-staff__about">
+          <h3 class="p-staff__aboutTitle">Dチームについて</h3>
+          <p class="p-staff__aboutText">
+            Dチームは、個性がバラバラであるが、前に進む力を持つ素晴らしいチームです。このチームには、さまざまなバックグラウンドや経験を持つメンバーがいますが、それぞれが自分のスキルや専門知識を生かして、目標に向かって協力しています。チームメンバーは、互いに刺激し合い、共通の目標に向かって協力し、困難に打ち勝つ強いチームスピリットを持っています。彼らは常に前向きで、自分たちの仕事に対して情熱を持って取り組んでいます。また、彼らはお互いを尊重し、コミュニケーションを大切にし、チーム内での協力関係を築いています。Dチームは、その個性的なメンバーたちが一体となり、協力して成し遂げることができる素晴らしい業績を生み出しています。彼らはチームとしての目標に向かって邁進し、前進する力を持っています。
+          </p>
+        </div>
+        <div class="p-staff__profile">
+          <h4 class="p-staff__profileTitle">Profile</h4>
+          <!-- 小林 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/koba.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">リーダー大丈夫そ？</h3>
+                <p class="p-staff__text">
+                  彼女は、まさに「頼りないリーダー」ですが、その真の強みは、周りの人々に与える影響力にあります。彼女は自分の力を過信せず、常に周りの人々を頼って、一緒に成長していくことを重視しています。みんなが支えてくれて助けてくれるのでチーム全体がまとまり、一体感を生み出すことができます。彼女は、Dチームみんなの成長に幸せを感じています。I LOVE teamD。WE LOVE teamD。みんなのことが大好きです。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2022.10〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">福岡県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">労務管理システム開発（sevicenow）</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">SQL / javascripts</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA">好きな食べ物はカニ味噌です。飲みたいです！</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA">粘り強いひつじ</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA">仲介者 / INFP-T</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 小林 -->
+          <!-- 塚本 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/tsuka.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">上り詰めるサブリーダー</h3>
+                <p class="p-staff__text">
+                  強い信念を持っているだけでなく、周りの人々を思いやる気持ちにあふれている、とても素晴らしい人柄。常に冷静でありながら、自身の考えに基づいて前向きに行動していく姿勢が、周りの人々に勇気を与えています。チームのバランスや調和を考えながら、積極的にサポートすることができるため、リーダーとしても優れた資質を持っています。彼のリーダーシップと、優れた洞察力は周りの人々から尊敬され、人々に成功をもたらす素晴らしい存在です。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2022.11〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">福岡県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">金融機関マネーロンダリングシステム開発（Java）</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">Java</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA">黒ヒョウ？</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 塚本 -->
+          <!-- 前村 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/mae.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">教育事業部コミュ力お化け</h3>
+                <p class="p-staff__text">
+                  教育事業部で優れた才能を発揮している人です。人当たりが非常に良く、誰とでも親しく接することができるため、職場に明るく活気をもたらしています。彼は、決して他人を批判することはなく、常に前向きな態度を貫き、人々を励まし、支援します。彼の温かい人柄と高いコミュニケーションスキルは、多くの人々に信頼と尊敬を勝ち得ています。教育事業部での彼の活躍によって、社内外から高い評価を受け、会社全体の発展に貢献しています。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2022.11〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">宮崎県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">労務管理システム開発（sevicenow）</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">JavaScript / jQuery</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 前村 -->
+          <!-- 重永 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/shige.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">全輪駆動のパワフルガール</h3>
+                <p class="p-staff__text">
+                  優れたスキルと人柄を持ち合わせた、まさにピカイチな人。一見おとなしそうに見えますが、内には強い意志と行動力があり、目標達成に向けて前向きに取り組みます。彼女の高いスキルと人間性は多くの人々から信頼され、周りの人々を鼓舞し、職場に活気とチカラをもたらしています。チームメンバーとしてはもちろん、クライアントからも高い評価を受け、事業の発展に大きく貢献しています。彼女の存在は、私たちにとっても心強い存在です。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2023.01〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">山口県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">超音波計測システム開発（C#）</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">C++</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 重永 -->
+          <!-- 増山 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/mashi.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">独特で鮮やかな感性</h3>
+                <p class="p-staff__text">
+                  独特で彼女にしか出せないオーラを持っている人。実は非常に意志が強く、チーム開発においても大きな力を発揮します。彼女の感性や考え方はとても鮮やかで、とても優しく、周りの人々のことを思いやり、サポートすることができる人です。彼女の存在は、明るく温かい雰囲気をもたらし、私たちに刺激を与えてくれます。彼女と共に仕事をすることは、常に前向きでクリエイティブなアイデアを生み出し、職場に活気とパワーを与えてくれるでしょう。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2023.01〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">山口県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">電力会社コールセンター</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">JavaScript / jQuery</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 増山 -->
+          <!-- 大岩 -->
+          <div class="p-staff__personal">
+            <div class="p-staff__personalImg">
+              <img class="p-staff__images" src="/assets/images/common/img07.jpg" alt="">
+            </div>
+            <div class="p-staff__info">
+              <div class="p-staff__textArea">
+                <h3 class="p-staff__name">期待の新メンバー</h3>
+                <p class="p-staff__text">
+                  業界未経験で入社することは、大きなチャレンジです。カフェ巡りやフィルムカメラが趣味ということからも、感性や創造力が垣間見えます。恐らく内面には熱意と意欲があることでしょう。新しい環境で成長し、新しい価値を創造していくことに期待しています。未経験だからこそ持つ視点や感性があり、それが新しい発見やアイデアに繋がり、新たな風をもたらしてくれることに感謝しています。ようこそDチームへ。
+                </p>
+              </div>
+              <div class="p-staff__skill">
+                <h4 class="p-staff__skillTitle">Skill</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">社歴</dt>
+                    <dd class="p-staff__skillA">2023.05〜</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">出身地</dt>
+                    <dd class="p-staff__skillA">福岡県</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">仕事</dt>
+                    <dd class="p-staff__skillA">医療関係コールセンター</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">勉強</dt>
+                    <dd class="p-staff__skillA">カリキュラム受講中</dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">ひとこと</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="p-staff__divination">
+                <h4 class="p-staff__divinationTitle">Divination</h4>
+                <div class="p-staff__qandaWrap">
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">動物占い</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                  <dl class="p-staff__qanda">
+                    <dt class="p-staff__skillQ">16Personalities</dt>
+                    <dd class="p-staff__skillA"></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 大岩 -->
+        </div>
+      </div>
+    <!-- ここまで記載 -->
+    </div>
   </div>
+  <!-- js 追加ファイルがある場合はここ以下に記載 -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"></script>
+  <script src="/assets/javascripts/main.js"></script>
 </body>
 </html>

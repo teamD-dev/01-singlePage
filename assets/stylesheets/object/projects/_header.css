@@ -82,50 +82,6 @@
 }
   /* ここまで */
 
-.p-footer {
-  padding: 20px;
-}
-
-.p-footer__topContainer,
-.p-footer__footContainer {
-  font-family: 'EB Garamond', serif;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.p-footer__footContainer {
-  margin-top: 40px;
-}
-
-.p-footer__topContainer>img {
-  width: 70px;
-  object-fit: contain;
-  align-self: flex-start;
-}
-
-.p-footer__linkContainer>h2 {
-  font-size: 2rem;
-}
-
-.p-footer__privacy {
-  align-self: flex-end;
-}
-
-.p-footer__privacy>h3 {
-  font-size: 1rem;
-}
-
-.p-footer__contactContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-
-
 
 @media screen and (min-width: 796px) {
   /* pc用スタイル */
